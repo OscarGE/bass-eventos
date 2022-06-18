@@ -1,0 +1,33 @@
+@api = http://localhost:3000
+
+GET {{api}}/mobiliario
+###
+GET {{api}}/mobiliario/629a8b0e7f10043fd0a8a128
+###
+POST {{api}}/mobiliario
+Content-Type: application/json
+
+{
+    "categoria": "Mesas",
+    "nombre": "Mesa redonda",
+    "detalles": "Mesa redonda plegable para 10 personas",
+    "costo": 800,
+    "precio_renta": 100,
+    "existencia": 20
+}
+###
+DELETE {{api}}/mobiliario/629a8cedef22698ae4ae0fe5
+
+###
+PUT {{api}}/mobiliario/629a921869c789f596b5f2b0
+Content-Type: application/json
+
+{
+    "categoria": "Mesas",
+    "nombre": "Mesa redonda",
+    "detalles": "Mesa redonda plegable para 10 personas",
+    "costo": 800,
+    "precio_renta": 100,
+    "existencia": 20
+}
+
